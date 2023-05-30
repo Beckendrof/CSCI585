@@ -1,0 +1,10 @@
+﻿I would like to bring your attention to my reasoning behind some of the design choices that I made in HW1 : 
+* The Enroll table is a bridge between Student and Course and records each student's course-wise fee payment status.
+* Each Group is assumed to have only one project assigned to them. However, one student may be part of multiple groups and have multiple projects.
+* Each Group will have a Table and Project assigned to it. The Projects will have an instructor assigned and a microcontroller type specified. 
+* A Table might have several Parts on it and several of the same parts might exist on different Tables. Every Part associated with that Table will have a condition tab that keeps check of the condition of the parts associated with that Table and Group.
+* A Room may have several tables or may not have any based on the type of class being held in the room. If students are working on Projects then the Room will have Tables and if a normal lecture is being held in the Room then no Tables will exist in the Room.
+* Each Class will have multiple Rooms associated with them however there may exist a Room with no Class in it.
+* Suppliers may provide multiple parts for the Projects. Therefore, a bridge table called Order was made in order to keep track of the cost and quantity of the ordered parts from each supplier. 
+* Each Instructor may be associated will multiple Classes but each class will only have one Instructor. The Salary table keeps track of the Pay per Instructor.
+* The Rating table keeps track of the Ratings given by each Student for every Course, Instructor, or Project that they had. Each student has to give a cumulative rating for and Course and the Instructor Project associated with that course. Thus, each student can give multiple Ratings but the rating ID makes the relationship 1:M.
