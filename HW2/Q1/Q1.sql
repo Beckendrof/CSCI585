@@ -1,3 +1,4 @@
+-- Database created in liveSQL 
 CREATE TABLE ProjectRoomBookings
 (roomNum INTEGER NOT NULL,
 startTime INTEGER NOT NULL,
