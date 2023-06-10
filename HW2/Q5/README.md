@@ -10,4 +10,4 @@ The `GROUP BY` and `HAVING` clauses are necessary to count the number of differe
 In the **'Q5_v2.sql'** file, for each instructor, I have subtracted the subjects they can teach from the required subjects. If there are no remaining subjects after the subtraction (which is achieved with the `MINUS` operator), it means the instructor can teach all required subjects.
 
 Output for both versions:  
-![Q5](Q5.jpg)
+![Q5](Q5.png)
