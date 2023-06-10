@@ -8,3 +8,6 @@ This query does the following:
 The `GROUP BY` and `HAVING` clauses are necessary to count the number of different subjects each instructor can teach, and then to compare that count to the total number of required subjects. If an instructor can teach all required subjects, their count of distinct subjects will equal the total count of required subjects.
 
 In the **'Q5_v2.sql'** file, for each instructor, I have subtracted the subjects they can teach from the required subjects. If there are no remaining subjects after the subtraction (which is achieved with the `MINUS` operator), it means the instructor can teach all required subjects.
+
+Output for both versions:  
+![Q5](Q5.jpg)

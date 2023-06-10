@@ -8,4 +8,4 @@ Here's how this query works:
 If both conditions are true, the project ID is included in the result.
 
 The final output :  
-- ![Q3](Q3.png)
+![Q3](Q3.png)
