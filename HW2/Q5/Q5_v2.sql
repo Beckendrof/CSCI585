@@ -44,3 +44,7 @@ WHERE NOT EXISTS (
     MINUS
     (SELECT Subject FROM Instructors WHERE Instructor = i.Instructor)
 );
+
+-- In the **'Q5_v2.sql'** file, for each instructor, I have subtracted the subjects they can teach from the 
+-- required subjects. If there are no remaining subjects after the subtraction (which is achieved with the `MINUS` operator), 
+-- it means the instructor can teach all required subjects.

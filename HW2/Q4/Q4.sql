@@ -36,3 +36,12 @@ FROM (
     GROUP BY 
         I.HourlyRate
 );
+
+-- For this question I created two different tables named `Instuctors` and `Classes` 
+-- respectively and populated them with some data. The script calculates the bonus for 
+-- each instructor by joining the `Instructors` and `Classes` tables based on the 
+-- instructor ID, then calculates the total student count for each instructor, multiplies 
+-- this by the instructor's hourly rate and 0.1, and finally outputs the maximum bonus. 
+-- Note that the sum of the student counts and the maximum bonus are calculated in 
+-- separate steps because Oracle SQL does not allow using aggregate functions like 
+-- `SUM` and `MAX` in the same `SELECT` clause.
