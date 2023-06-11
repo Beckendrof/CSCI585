@@ -1,9 +1,6 @@
 Here's how this query works:
 
-- The GROUP BY PID clause groups the results by project ID.
-- The HAVING clause checks for each grouped project ID:
-    - MIN(CASE WHEN Step = 0 THEN Status ELSE NULL END) = 'C': This checks if the status of step 0 is 'C' (completed). MIN is used to handle the case where step 0 might not exist for a project, in which case the result would be NULL.
-    - MAX(CASE WHEN Step > 0 THEN Status ELSE NULL END) = 'W': This checks if the status of all steps greater than 0 is 'W' (waiting). MAX is used to handle the case where steps greater than 0 might not exist for a project, in which case the result would be NULL.
+- This query first selects projects where step 0 is completed, and then it ensures that the same PID has at least one row where step > 0. After this, it filters out any project that has any step greater than 0 that is also completed. The final result would be projects where only step 0 is completed, all other steps are waiting, and there is at least one step greater than 0.
 
 If both conditions are true, the project ID is included in the result.
 

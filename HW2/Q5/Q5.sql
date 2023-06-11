@@ -29,7 +29,7 @@ EXCEPTION
 END;
 /
 
-WITH RequiredSubjects AS (
+WITH Subjects AS (
     SELECT 'Electronic Music Fundamentals' AS Subject FROM dual
     UNION ALL
     SELECT 'MIDI controllers' FROM dual
@@ -37,9 +37,9 @@ WITH RequiredSubjects AS (
     SELECT 'EDM synthesis' FROM dual
 )
 
--- Select the instructors who can teach all required subjects
 SELECT Instructor
 FROM Instructors
-WHERE Subject IN (SELECT Subject FROM RequiredSubjects)
+WHERE Subject IN (SELECT Subject FROM Subjects)
 GROUP BY Instructor
-HAVING COUNT(DISTINCT Subject) = (SELECT COUNT(*) FROM RequiredSubjects);
+HAVING COUNT(DISTINCT Subject) = (SELECT COUNT(*) FROM Subjects)
+AND COUNT(Subject) <= 3;

@@ -18,6 +18,14 @@ INSERT INTO Projects (PID, Step, Status) VALUES ('P333', 3, 'W');
 
 SELECT PID
 FROM Projects
-GROUP BY PID
-HAVING MIN(CASE WHEN Step = 0 THEN Status END) = 'C' 
-    AND MAX(CASE WHEN Step > 0 THEN Status END) = 'W';
+WHERE Step = 0 AND Status = 'C'
+AND PID IN (
+    SELECT PID
+    FROM Projects
+    WHERE Step > 0
+)
+AND PID NOT IN (
+    SELECT PID
+    FROM Projects
+    WHERE Step > 0 AND Status = 'C'
+);
