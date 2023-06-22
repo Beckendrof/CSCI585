@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>OL</title>
+<script src="https://openlayers.org/api/OpenLayers.js">
+</script>
+<style>
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+
+
+<script>
+var d = {"k1":[{"a":5, "b":-6}]};
+localStorage.setItem("myData",JSON.stringify(d));
+
+var dataStored = JSON.parse(localStorage.getItem("myData"));
+console.log(dataStored); 
+var a = dataStored.k1; 
+for(var indx in a) { 
+    console.log(a[indx]); 
+}
+
+function initMap() {
+        map = new OpenLayers.Map('map');
+        basemap = new OpenLayers.Layer.OSM("Simple OSM Map");
+        map.addLayer(basemap);
+        markers = new OpenLayers.Layer.Markers("Markers");
+        map.addLayer(markers);
+}
+
+function addMarker(latitude, longitude) {
+        var lonLat = new OpenLayers.LonLat(longitude, latitude)
+            .transform(
+                new OpenLayers.Projection("EPSG:4326"), 
+                map.getProjectionObject() 
+        );
+        var point = new OpenLayers.Marker(lonLat);
+        markers.addMarker(point);
+        map.setCenter(lonLat,18); 
+}
+
+
+initMap();
+addMarker(34.02055,-118.28909, 'OHE');
+addMarker(34.02345,-118.28643, 'Fairbanks');
+addMarker(34.02015,-118.28855, 'Armstrong');
+addMarker(34.02232,-118.28681, 'Heritage');
+addMarker(34.02259,-118.28733, 'Kehle');
+addMarker(34.02300,-118.28791, 'McKay');
+addMarker(34.02248,-118.28564, 'Evelin');
+addMarker(34.02275,-118.28496, 'Paderewski');
+addMarker(34.02229,-118.28328, 'Generations');
+addMarker(34.02151,-118.28284, 'Leavey');
+addMarker(34.02057,-118.28343, 'Doheny');
+addMarker(34.02061,-118.28535, 'Tommy');
+addMarker(34.02734,-118.29039, 'Home');
+
+</script>
+
+</body>
+
+</html>

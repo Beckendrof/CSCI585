@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+
+<Folder>
+<name>Water Works</name>
+<Placemark><name>OHE</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28909,34.02055</coordinates></Point>
+</Placemark>
+<Placemark><name>Fairbanks</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28643,34.02345</coordinates></Point>
+</Placemark>
+<Placemark><name>Kehle</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28733,34.02259</coordinates></Point>
+</Placemark>
+<Placemark><name>Generations</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28328,34.02229</coordinates></Point>
+</Placemark>
+<Placemark><name>Leavey</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28284,34.02151</coordinates></Point>
+</Placemark>
+<Placemark><name>Doheny</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28343,34.02057</coordinates></Point>
+</Placemark>
+</Folder>
+
+<Folder>
+<name>Statues</name>
+<Placemark><name>Armstrong</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28855,34.02015</coordinates></Point>
+</Placemark>
+<Placemark><name>Heritage</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28681,34.02232</coordinates></Point>
+</Placemark>
+<Placemark><name>McKay</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28791,34.02300</coordinates></Point>
+</Placemark>
+<Placemark><name>Evelin</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28564,34.02248</coordinates></Point>
+</Placemark>
+<Placemark><name>Paderewski</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28496,34.02275</coordinates></Point>
+</Placemark>
+<Placemark><name>Tommy</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28535,34.02061</coordinates></Point>
+</Placemark>
+</Folder>
+
+<Placemark><name>Home</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.29039,34.02734</coordinates></Point>
+</Placemark>
+
+<Placemark>
+<name>ConvexHullall</name>
+<Style><LineStyle><color>ffff7d53</color></LineStyle><PolyStyle><color>80fe4d28</color></PolyStyle></Style>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-118.28855,34.02015 -118.28909,34.02055 -118.29039,34.02734 -118.28328,34.02229 -118.28284,34.02151 -118.28343,34.02057 -118.28855,34.02015</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon> 
+</Placemark>
+
+<Placemark>
+<name>Neighbour1</name>
+<description>Neighbour1</description>
+<Style><LineStyle><color>ff0000ff</color><width>2</width></LineStyle></Style>
+<LineString>
+<coordinates>-118.29039,34.02734 -118.28791,34.02300</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>Neighbour2</name>
+<description>Neighbour2</description>
+<Style><LineStyle><color>ff0000ff</color><width>2</width></LineStyle></Style>
+<LineString>
+<coordinates>-118.29039,34.02734 -118.28643,34.02345</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>Neighbour3</name>
+<description>Neighbour3</description>
+<Style><LineStyle><color>ff0000ff</color><width>2</width></LineStyle></Style>
+<LineString>
+<coordinates>-118.29039,34.02734 -118.28733,34.02259</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>Neighbour4</name>
+<description>Neighbour4</description>
+<Style><LineStyle><color>ff0000ff</color><width>2</width></LineStyle></Style>
+<LineString>
+<coordinates>-118.29039,34.02734 -118.28681,34.02232</coordinates>
+</LineString>
+</Placemark>
+
+</Document></kml>
