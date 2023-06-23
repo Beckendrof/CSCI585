@@ -1,4 +1,4 @@
-**Q1
+**Q1**  
 The linear regression equation is as follows:
 
 ```
