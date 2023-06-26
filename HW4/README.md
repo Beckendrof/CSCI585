@@ -36,7 +36,7 @@ num_rings = -0.08249 * sex=I  +
 ```
 
 **Q3**
-Linear Regression eqation :
+Linear Regression equation :
 
 ```
 num_rings = - 11.933 * length +
