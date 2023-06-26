@@ -19,6 +19,21 @@ This process continues until there's no observable enhancement in the average pr
 In the case at hand, eliminating these three features `INDUS`, `AGE`, and `CHAS=0` had no measurable impact on the value of the error. As a result, they were excluded from 
 the model to maintain simplicity and accuracy.
 
-**Q2
+**Q2**
+
+Linear Regression equation :
+
+```
+num_rings = -0.08249 * sex=I  + 
+            0.0577 * sex=M - 
+            0.4583 * length +
+            11.0751 * diameter + 
+            10.7615 * height + 
+            8.9754 * whole_weight - 
+            19.7869 * shucked_weight - 
+            10.5818 * viscera_weight + 
+            8.7418 * shell_weight + 
+            3.8946
+```
 
 
