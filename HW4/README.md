@@ -20,7 +20,6 @@ In the case at hand, eliminating these three features `INDUS`, `AGE`, and `CHAS=
 the model to maintain simplicity and accuracy.
 
 **Q2**
-
 Linear Regression equation :
 
 ```
@@ -34,6 +33,16 @@ num_rings = -0.08249 * sex=I  +
             10.5818 * viscera_weight + 
             8.7418 * shell_weight + 
             3.8946
+```
+
+**Q3**
+Linear Regression eqation :
+
+```
+num_rings = - 11.933 * length +
+            25.766 * diameter +
+            20.538 * height + 
+            2.836
 ```
 
 
